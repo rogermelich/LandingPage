@@ -13,28 +13,81 @@
         background: url("./assets/img/Sports.png");
         background-size: cover;
     }
+
     body {
         background-position: center;
     }
 </style>
 <body>
+<div class="navbar-wrapper">
+    <div class="container">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="index_old.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Bootstrap <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Bootstrap/carousel">Carousel</a></li>
+                                <li><a href="Bootstrap/cover">Cover</a></li>
+                                <li><a href="Bootstrap/justified-nav">Justifed Nav</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">Bulma <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Bulma/cover">Cover</a></li>
+                                <li><a href="Bulma/hero">Hero</a></li>
+                                <li><a href="Bulma/landing">Landing</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</div>
+<br>
+<br>
 <div class="container-fluid">
     <div class="panel">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <h1>Ebre-Escool, enrollment module</h1>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1>Ebre-Escool, enrollment module</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, sint.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, sint.</p>
 
-            <!--Call to Action -> CTA-->
+                <!--Call to Action -> CTA-->
 
-            <div class="input-group">
-                <span class="input-group-addon glyphicon glyphicon-envelope"></span>
-                <input type="email" class="form-control" id="inputGroup" aria-describedby="inputGroup" placeholder="email@email.com">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                    <input type="email" class="form-control" id="inputGroup" aria-describedby="inputGroup"
+                           placeholder="email@email.com">
+                </div>
+                <button type="submit" class="btn btn-success">Keep me information</button>
             </div>
-            <button type="submit" class="btn btn-success">Keep me information</button>
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap.js"></script>
+
 </body>
 </html>
